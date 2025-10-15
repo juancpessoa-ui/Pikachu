@@ -8,6 +8,8 @@ body{
     background-color: var(--primary-color);
     padding: 70px;
     font-family: Righteous ,sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
@@ -17,5 +19,67 @@ header{
 }
 header span{
     font-size: 32px;
+    color: var(--secubdary-color);
+}
+main{
+     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sombra{
+    position: absolute;
+    font-size: 400px;
+    color: #ffffff55;
+    z-index: -999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 300px;
+    color: white;
+}
+.conteiner{
+    height: 154px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 200px;
+}
+.descricao h2{ 
+    font-size: 64px;
+    color: var(--secubdary-color);
+}
+.descricao p{ 
+    font-size: 20px;
+    color: var(--secubdary-color);
+    width: 400px;
+}
+.conteiner a{
+    width: 400px;
+    height: 100px;
+    background-color: var(--secubdary-color);
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+}
+.pikachu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 959;
+
+}
+
+footer{
+    text-align: center;
     color: var(--secubdary-color);
 }
