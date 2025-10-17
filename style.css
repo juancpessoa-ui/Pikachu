@@ -1,32 +1,36 @@
-:root{
+:root {
     --primary-color: #F5CF06;
     --secubdary-color: #8E4106;
 }
 
-body{
+body {
     height: 100vh;
     background-color: var(--primary-color);
     padding: 70px;
-    font-family: Righteous ,sans-serif;
+    font-family: Righteous, sans-serif;
     display: flex;
     flex-direction: column;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     gap: 16px;
-    
+
 }
-header span{
+
+header span {
     font-size: 32px;
     color: var(--secubdary-color);
 }
-main{
-     flex-grow: 1;
+
+main {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-.sombra{
+
+.sombra {
     position: absolute;
     font-size: 26vw;
     color: #ffffff55;
@@ -36,7 +40,8 @@ main{
     transform: translate(-50%, -80%);
 
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,33 +49,38 @@ h1{
     font-size: 20vw;
     color: white;
 }
-.conteiner{
-    height: 154px;
+
+.conteiner {
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 200px;
 }
-.descricao h2{ 
+
+.descricao h2 {
     font-size: 64px;
     color: var(--secubdary-color);
 }
-.descricao p{ 
+
+.descricao p {
     font-size: 20px;
     color: var(--secubdary-color);
     width: 400px;
 }
-.conteiner a{
+
+.conteiner a {
     width: 400px;
     height: 100px;
     background-color: var(--secubdary-color);
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     font-size: 48px;
     color: white;
 }
-.pikachu{
+
+.pikachu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,25 +89,28 @@ h1{
 
 }
 
-footer{
+footer {
     text-align: center;
     color: var(--secubdary-color);
 }
 
 
 /* tablete */
-@media (max-width:768px){
+@media (max-width:768px) {
     body {
         padding: 30px;
     }
-    .sombra{
+
+    .sombra {
         transform: translate(-50%, -180%);
     }
-    h1{
+
+    h1 {
         align-items: start;
         transform: translateY(40%);
-        flex-grow:0;
+        flex-grow: 0;
     }
+
     .conteiner {
         flex-direction: column;
         align-items: center;
@@ -105,19 +118,35 @@ footer{
         padding: 0;
 
     }
-    .descricao p{
+
+    .descricao p {
         text-align: center;
     }
+
     footer {
         display: none;
     }
-    main{
+
+    main {
         justify-content: space-between;
     }
-
 }
-/* tablete */
 
-@media (max-width: 480){
-    
+@media (max-width: 480px) {
+    .descricao h2 {
+        font-size: 38px;
+    }
+    .descricao p {
+        display: none;
+    }
+    .pikachu {
+        height: 50vh;
+    }
+    .conteiner a {
+        width: 100%;
+    }
+
+    .sombra {
+        transform: translate(-50%, -230%);
+    }
 }
